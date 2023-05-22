@@ -3,9 +3,9 @@ const { getHeroes, createHeroe, editHeroe, deleteHeroe } = require('./controller
 
 const router = express.Router();
 
-router.get('/', getHeroes);
-router.post('/', createHeroe);
-router.put('/', editHeroe);
-router.delete('/:id', deleteHeroe);
+router.get('/heroes', getHeroes);
+router.post('/heroes', createHeroe);
+router.put('/heroes', editHeroe);
+router.delete('/heroes/:id', deleteHeroe);
 
 module.exports = router;
